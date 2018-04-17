@@ -2,6 +2,10 @@
    font-size: 60px;
 }
 
+#outer{
+    margin-top: 10px;
+}
+
 #total-donations-nd {
    font-size: 60px;
 }

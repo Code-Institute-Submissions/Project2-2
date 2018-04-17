@@ -1,10 +1,11 @@
 body {
    margin: 0;
    padding: 0;
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: 'Roboto', sans-serif;
    color: #444;
+    background-color: #c4e3f3!important;
 }
-/* Create dark grey header with a white logo */
+
 header {
    background-color: #2B2B2B;
    height: 35px;
@@ -23,14 +24,15 @@ header h1.logo:hover {
    color: #fff;
    text-decoration: none;
 }
-/* Center the body content */
 .container {
    width: 940px;
    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
 }
 div.jumbo {
    padding: 10px 0 30px 0;
-   background-color: #eeeeee;
+   background-color: transparent;
    -webkit-border-radius: 6px;
    -moz-border-radius: 6px;
    border-radius: 6px;
@@ -62,4 +64,43 @@ h3 {
 .menu li a {
    color: #999;
    text-decoration: none;
+}
+
+.jumbo-custom {
+    background-color: transparent!important;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro_button{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #5a6c91;
+    border: none;
+    border-radius: 15px;
+}
+
+.intro_button:hover {
+    background-color: #43516c;
+}
+
+#about{
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: medium;
 }

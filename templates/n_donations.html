@@ -1,17 +1,33 @@
 {% extends "layout.html" %}
 {% block content %}
-          <div class="col-sm-12">
+          <div class="col-sm-6">
             <div class="chart-wrapper">
-              <div class="chart-title">
-                Number of Donations over Time
+              <div class="chart-title" data-step="2" data-intro="Distribution of donations" style="font-weight: normal" data-position="right">
+                Resources Type
               </div>
               <div class="chart-stage">
-                <div id="time-chart"></div>
+                <div id="resource-type-row-chart"></div>
               </div>
             </div>
           </div>
+          <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title"data-step="4" data-intro="Distribution of funds based on poverty level" style="font-weight: normal" data-position="left">
+            Poverty Level
+          </div>
+          <div class="chart-stage">
+            <div id="poverty-level-row-chart"></div>
+          </div>
+        </div>
+      </div>
     <div class="col-sm-12">
-<h3>Program on Incresing overall Donations</h3>
+<h3>Program on Incresing School Donations</h3>
+        <p>
+            Education is critical to ensuring that every Oregonian is prepared for success in a global economy, has economic security, and has the ability to provide for themselves and their families. Education promotes shared values, enriches culture and expands the vitality of individuals and communities. When delivered equitably, education provides opportunity for every Oregonian no matter their race, home language, disability, family income or zip code. Never before has a high-quality education been more important to the lives and well-being of individuals and our communities.
+            Our main goal is to increase fundings for all public schools in the State of Oregon.
+            We can see that right now there is no fair distribution, funds do not reach schools in a poor regions.
+            Virtually no resources available to support technological upgrades for school. We live in a digital world and every child should have access to modern technology.
+        </p>
     <ul>
         <li>Complete a strategic plan that clearly communicates out institution’s vision and the goals that will implement this vision.</li>
         <li>Determine the investment priorities that are needed to achieve the vision, including current and aspirational needs.</li>
@@ -19,10 +35,12 @@
     </ul>
     <h3>Our Goals</h3>
     <ul>
-        <li>Increase overall state support</li>
-        <li>Improve funding distribution for schools with higher poverty rates</li>
-        <li>Significantly dcrease number of expired fundings</li>
+        <li>40 percent of adult Oregonians will have earned a bachelor’s degree or higher,</li>
+        <li>40 percent will have earned an associate’s degree or postsecondary credential as their highest level of education attainment, and</li>
+        <li>20 percent will have earned at least a high school diploma, an extended or modified high school diploma, or the equivalent of a high school diploma as their highest level of education attainment. These goals reflect a shared commitment by the state and education groups to create the conditions to ensure each young person has access and opportunities throughout their education to thrive and to pursue an education and career path meaningful to them.</li>
     </ul>
-
+    <div>
+    <img src="http://127.0.0.1:8887\200px-Seal_of_Oregon.svg.png">
+    </div>
     </div>
 {% endblock %}
