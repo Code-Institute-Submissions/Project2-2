@@ -4,26 +4,26 @@
 
 ### What is this website for?
 
-This is a front end website for a popular music band. 
+This is a back end dashboard for Election Program for school donations project. Code Institute, stream 2.
 
 ### What does it do?
 
-This app will allow users to listen to the latest band releases and watch band videos. After submitting the contact form, those who want to book the band for thier event will be able to recieve notification with availibility and price. 
+This app create dashboard for key figures and metrics to support Oregon election program which focuses on school donations.
 
 ### How does it work
 
-The site uses front end programming languages: HTML5, CSS. It uses Javascripts for form validation and pushing notification to users. The site is styled with Bootstrap.
+The site uses front end programming languages: HTML5, CSS. 
+Backend Programing languages: Python
+It uses Flask framework to connect to database. 
+MongoDB database is used.
+The site is styled with Bootstrap.
 
 ## Features
 
 ### Existing Features
-- Registration Form
-- Authentication LogIn
-- Logout
+- Dashboard
+- Onbording for dashboard
 
-
-### Features Left to Implement
-- none
  
 ## Tech Used
 
@@ -34,27 +34,25 @@ The site uses front end programming languages: HTML5, CSS. It uses Javascripts f
 	- We use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
 	- **Bower** is used to manage the installation of our libraries and frameworks
-- [Django]()
-  - **Django** is used as a main framework
-- [SQLite]()
-  - **SQLite**  is used as a backend database for the app
+- [Flask](http://flask.pocoo.org/)
+  - **Flask** is used as a main framework
+- [MongoDB](https://www.mongodb.com/)
+  - **MongoDB**  is used as a backend database for the app
   
  
 ## Contributing
+- Open Source Database
+- Code Institute course material and tutorials
+- Guido Cecilio Garcia Bernal
+- W3School tutorials
+
 
 ### Getting the code up and running
 1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
-2. After you've that you'll need to make sure that you have **npm** and **bower** installed
-  1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
-  2. Once you've done this you'll need to run the following command:
-  	 `npm install -g bower # this may require sudo on Mac/Linux`
-3. Once **npm** and **bower** are installed, you'll need to install all of the dependencies in *package.json* and *bower.json*
-  ```
-  npm install
-
-  bower install
-  ```
-4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
-5. Once **http-server** is installed run ```http-server```
-6. The project will now run on [localhost](http://127.0.0.1:8080)
-7. Make changes to the code and if you think it belongs in here then just submit a pull request
+2. Open project in Pycharm and install requirement.txt
+3. Install MongoDB and trasnfer data file to MongoDB/server/3.6/bin folder. Keep in Mind that 3.6 is a Mongodb version and can differ on your computer.
+4. Fire up mongod command and create database.
+5. Keep MongoDB running and ensure you connected to the right port in school_donations2.py
+6. Start project from Pycharm.
+7. The project will now run on [localhost](http://127.0.0.1:5000)
+8. Make changes to the code and if you think it belongs in here then just submit a pull request
