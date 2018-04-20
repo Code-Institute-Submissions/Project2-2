@@ -1,12 +1,12 @@
-{% extends "../index.html" %}
+{% extends "index.html" %}
 {% block content %}
    <div class="jumbo jumbo-custom">
        <h2>Welcome Senator Smith School Program</h2>
        <h2>Children is our future</h2>
-       <a href="{{ url_for('index') }}">
+       <a href="{{ url_for('key_insights') }}">
    <button class="intro_button" type="button" autofocus onclick="">Learn more!</button></a>
    </div>
     <div>
-    <img src="http://127.0.0.1:8887\200px-Seal_of_Oregon.svg.png">
+    <img src="../static/images/200px-Seal_of_Oregon.svg.png">
     </div>
 {% endblock %}
