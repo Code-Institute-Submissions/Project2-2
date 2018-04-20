@@ -9,7 +9,7 @@ function makeGraphs(error, donorsUSProjects) {
     }
 
     //Clean donorsUSProjects data
-    var dateFormat = d3.time.format("%Y-%m-%d");
+    var dateFormat = d3.time.format("%Y-%m-%d %H:%M:%S");
     donorsUSProjects.forEach(function (d) {
         d["date_posted"] = dateFormat.parse(d["date_posted"]);
         d["date_posted"].setDate(1);
