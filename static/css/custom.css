@@ -55,3 +55,16 @@
    padding-top: 4px;
    padding-bottom: 0px;
 }
+
+#poverty{
+    width: 300px;
+}
+
+#funding{
+    width: 290px;
+    margin-left: -15px;
+}
+
+#total{
+    width:300px;
+}
