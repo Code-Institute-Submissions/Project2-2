@@ -2,14 +2,14 @@ from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
 import json
+import os
 
 
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'donorsUSA'
+MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
+DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorsUSA')
 COLLECTION_NAME = 'projects'
 
 
@@ -38,9 +38,9 @@ def donor_projects():
         'date_posted': True, 'total_donations': True
     }
 
-    with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
+    with MongoClient(MONGO_URI) as conn:
         collection = conn[DBS_NAME][COLLECTION_NAME]
-        projects = collection.find(projection=FIELDS, limit=55000)
+        projects = collection.find(projection=FIELDS, limit=20000)
         return json.dumps(list(projects))
 
 if __name__ == "__main__":
