@@ -89,9 +89,9 @@ function makeGraphs(error, donorsUSProjects) {
 
     timeChart
         .ordinalColors(["#C96A23"])
-        .width(1200)
+        .width(560)
         .height(300)
-        .margins({top: 30, right: 50, bottom: 30, left: 50})
+        .margins({top: 30, right: 50, bottom: 30, left: 35})
         .dimension(dateDim)
         .group(numProjectsByDate)
         .renderArea(true)
@@ -104,7 +104,7 @@ function makeGraphs(error, donorsUSProjects) {
 
     resourceTypeChart
         .ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
-        .width(300)
+        .width(270)
         .height(250)
         .dimension(resourceTypeDim)
         .group(numProjectsByResourceType)
@@ -120,6 +120,7 @@ function makeGraphs(error, donorsUSProjects) {
 
     fundingStatusChart
         .ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
+        .width(290)
         .height(220)
         .radius(90)
         .innerRadius(40)
