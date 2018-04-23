@@ -29,13 +29,12 @@ def key_insights():
 def our_program():
     return render_template('our_program.html')
 
-
 @app.route("/donorsUS/projects")
 def donor_projects():
     FIELDS = {
-        '_id': False, 'funding_status': True, 'school_state': True,
+        '_id': False, 'funding_status': True, 'school_state':'OR',
         'resource_type': True, 'poverty_level': True,
-        'date_posted': True, 'total_donations': True
+        'date_posted': True, 'total_donations': True, 
     }
 
     with MongoClient(MONGO_URI) as conn:
