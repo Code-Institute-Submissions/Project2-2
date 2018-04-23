@@ -32,14 +32,14 @@ def our_program():
 @app.route("/donorsUS/projects")
 def donor_projects():
     FIELDS = {
-        '_id': False, 'funding_status': True, 'school_state':True,
+        '_id': False, 'funding_status': True, 'school_state': True,
         'resource_type': True, 'poverty_level': True,
         'date_posted': True, 'total_donations': True, 
     }
 
     with MongoClient(MONGO_URI) as conn:
         collection = conn[DBS_NAME][COLLECTION_NAME]
-        projects = collection.find({'school_state': 'OR'}, projection=FIELDS, limit=80000)
+        projects = collection.find({'school_state': 'OR'}, projection=FIELDS, limit=55000)
         return json.dumps(list(projects))
 
 if __name__ == "__main__":
