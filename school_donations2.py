@@ -39,7 +39,7 @@ def donor_projects():
 
     with MongoClient(MONGO_URI) as conn:
         collection = conn[DBS_NAME][COLLECTION_NAME]
-        projects = collection.find({'school_state': 'OR'}, projection=FIELDS, limit=55000)
+        projects = collection.find({'school_state': 'OR'}, projection=FIELDS, limit=160000)
         return json.dumps(list(projects))
 
 if __name__ == "__main__":
