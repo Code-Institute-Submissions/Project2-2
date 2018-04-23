@@ -55,4 +55,5 @@ The site is styled with Bootstrap.
 5. Keep MongoDB running and ensure you connected to the right port in school_donations2.py
 6. Start project from Pycharm.
 7. The project will now run on [localhost](http://127.0.0.1:5000)
-8. Make changes to the code and if you think it belongs in here then just submit a pull request
+8. You can view deployed version at https://morning-inlet-56931.herokuapp.com/
+9. Make changes to the code and if you think it belongs in here then just submit a pull request
