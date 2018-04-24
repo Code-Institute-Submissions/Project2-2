@@ -2,16 +2,18 @@
 <html>
  <head>
      <title>School Donations Program</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <link rel="stylesheet" href="{{ url_for ('static',filename='lib/css/bootstrap.min.css')}}">
      <link rel="stylesheet" href="{{ url_for ('static',filename='lib/css/keen-dashboards.css')}}">
      <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
      <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
      <link rel="stylesheet" href="{{url_for ('static', filename='lib/css/introjs.css')}}" />
      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+     <link rel="stylesheet" href="{{url_for ('static', filename='lib/css/introjs.css')}}" />
      <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500" rel="stylesheet">
  </head>
  <body>
-   <header>
+
        <strong><nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav menu">
@@ -20,10 +22,8 @@
         <li><a href="{{ url_for('key_insights') }}">Key Insights</a></li>
         <li><a href="{{ url_for('our_program') }}">Our Program</a></li>
     </ul>
-  </div>
          </nav></strong>
-   </header>
-   <div class="container">
+   <div class="container-fluid">
      {% block content %}
      {% endblock %}
    </div>
@@ -35,6 +35,6 @@
    <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
    <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
    <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
-   <script src="{{url_for ('static', filename='lib/js/intro.js')}}" type="text/javascript"></script>
+   <script src="{{url_for ('static', filename='lib/js/intro.js')}}" type="text/javascript"></script
  </body>
 </html>
