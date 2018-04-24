@@ -1,9 +1,13 @@
 body {
-   margin: 0;
-   padding: 0;
+    margin: 0 0 10px;
+    padding: 0;
    font-family: 'Roboto', sans-serif;
    color: #444;
     background-color: #c4e3f3!important;
+}
+
+.container-fluid{
+    position: relative;
 }
 
 header {
