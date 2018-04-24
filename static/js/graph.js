@@ -62,8 +62,8 @@ function makeGraphs(error, donorsUSProjects) {
     var timeChart = dc.lineChart("#time-chart");
     var resourceTypeChart = dc.rowChart("#resource-type-row-chart");
     var povertyLevelChart = dc.rowChart("#poverty-level-row-chart");
-    var programResourceChart = dc.rowChart("#our-program-resources-chart");
-    var programPovertyChart = dc.rowChart("#our-program-poverty-chart");
+    var programResourceChart = dc.rowChart("#our-program-resources-row-chart");
+    var programPovertyChart = dc.rowChart("#our-program-poverty-row-chart");
     var numberProjectsND = dc.numberDisplay("#number-projects-nd");
     var totalDonationsND = dc.numberDisplay("#total-donations-nd");
     var fundingStatusChart = dc.pieChart("#funding-chart");
