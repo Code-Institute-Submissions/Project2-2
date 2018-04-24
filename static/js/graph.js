@@ -62,8 +62,6 @@ function makeGraphs(error, donorsUSProjects) {
     var timeChart = dc.lineChart("#time-chart");
     var resourceTypeChart = dc.rowChart("#resource-type-row-chart");
     var povertyLevelChart = dc.rowChart("#poverty-level-row-chart");
-    var programResourceChart = dc.rowChart("#our-program-resources-row-chart");
-    var programPovertyChart = dc.rowChart("#our-program-poverty-row-chart");
     var numberProjectsND = dc.numberDisplay("#number-projects-nd");
     var totalDonationsND = dc.numberDisplay("#total-donations-nd");
     var fundingStatusChart = dc.pieChart("#funding-chart");
@@ -118,22 +116,6 @@ function makeGraphs(error, donorsUSProjects) {
         .height(250)
         .dimension(povertyLevelDim)
         .group(numProjectsByPovertyLevel)
-        .xAxis().ticks(4);
-
-    programPovertyChart
-        .ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
-        .width(300)
-        .height(250)
-        .dimension(povertyLevelDim)
-        .group(numProjectsByPovertyLevel)
-        .xAxis().ticks(4);
-
-    programResourceChart
-        .ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
-        .width(270)
-        .height(250)
-        .dimension(resourceTypeDim)
-        .group(numProjectsByResourceType)
         .xAxis().ticks(4);
 
     fundingStatusChart
